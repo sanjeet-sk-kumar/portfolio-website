@@ -1,0 +1,172 @@
+#section-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.text-zone h1 {
+  font-size: 3.2rem;
+  line-height: 50px;
+  letter-spacing: -3pxpx;
+  margin: 0;
+  position: relative;
+}
+
+.text-zone h1::before {
+  content: "<h1>";
+  position: absolute;
+  top: -80px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-family: "La Belle Aurore", cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
+.text-zone h1::after {
+  content: "</h1>";
+  position: absolute;
+  bottom: -10px;
+  right: -70px;
+  font-size: 1.2rem;
+  font-family: "La Belle Aurore", cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+
+.text-zone img {
+  //   width: 35px;
+  //   height: 40px;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.text-zone p {
+  margin-top: 30px;
+  color: #a2a2a3;
+  letter-spacing: 2px;
+  font-size: 14px;
+  position: relative;
+}
+
+.contact-button {
+  margin: 50px 0 0;
+  text-decoration: none;
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  letter-spacing: 3px;
+  position: relative;
+  text-align: center;
+  color: #08fdd8;
+}
+
+.contact-button div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button span.bg {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: -5px;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #08fdd8;
+  transform: skewX(-19deg);
+}
+
+.contact-button:hover span.bg {
+  width: 110%;
+}
+
+.contact-button span.base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border: 1px solid #08fdd8;
+  box-sizing: border-box;
+}
+
+.contact-button span.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.contact-button:hover span.text {
+  color: #1d1d1d;
+}
+
+.scroll-down {
+  position: absolute;
+  right: -20px;
+  bottom: 3.3rem;
+  display: flex;
+  //   flex-direction: column;
+  align-items: center;
+  transform: rotate(90deg);
+  justify-content: center;
+  //   display: block;
+  font-size: 14px;
+  color: #fff;
+}
+
+.scroll-down-left {
+  left: -30px;
+  right: auto;
+}
+
+.scroll-down span {
+  display: inline-block;
+  animation: scroll 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(7px);
+  }
+}
+.scroll-down .fas {
+  transform: rotate(270deg);
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 950px) {
+  #section-home {
+    padding-left: 13rem;
+  }
+  .text-zone h1 {
+    font-size: 6.3rem;
+    line-height: 7rem;
+    letter-spacing: -6px;
+  }
+  .text-zone img {
+    // width: 50px;
+    // height: 92px;
+    width: 64px;
+    height: 72px;
+  }
+  .text-zone .gray-text {
+    font-size: 1rem;
+  }
+  .scroll-down-left {
+    // left: 8%;
+    left: 110px;
+    right: auto;
+  }
+}

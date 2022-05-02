@@ -1,0 +1,144 @@
+.aside {
+  width: 100%;
+  height: 0%;
+  background-color: #191919;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.show-nav {
+  height: 100%;
+  overflow: visible;
+}
+
+.aside-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.logo-section {
+  min-height: 32vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 45px;
+  height: auto;
+}
+
+.logo span {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.logo-section > span {
+  margin-top: 25px;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #282828;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+  text-decoration: none;
+  color: #929296;
+  border-bottom: 1px solid #282828;
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #08fdd8;
+}
+
+// .nav-links a::before {
+//   content: "";
+//   width: 100%;
+//   height: 1px;
+//   position: absolute;
+//   left: 0;
+//   background: #2d2d2e;
+// }
+
+// .social-icons {
+//   list-style: none;
+//   display: flex;
+//   margin-bottom: 30px;
+// }
+
+.social-icons {
+  color: #909096;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20rem;
+}
+.social-icons li {
+  width: 30px;
+  font-size: 1rem;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: #909096;
+}
+
+.social-icons li a:hover {
+  color: #08fdd8;
+}
+
+@media screen and (min-width: 950px) {
+  .aside {
+    width: 10%;
+    height: 100%;
+  }
+  .aside-wrapper {
+    height: 80%;
+  }
+  .logo-section {
+    min-height: 25vh;
+  }
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  .social-icons {
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    height: 4rem;
+  }
+  .social-icons li {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

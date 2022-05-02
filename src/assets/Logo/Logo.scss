@@ -1,0 +1,29 @@
+.logo-container {
+  background-color: black;
+}
+
+#alpha1 {
+  position: absolute;
+  left: 175px;
+  top: -83px;
+  display: inline-block;
+  font-size: 750px;
+  font-weight: bolder;
+  font-stretch: ultra-expanded;
+  transform: rotate(359deg);
+  color: cyan;
+  font-family: "Roboto", sans-serif;
+}
+
+#alpha2 {
+  position: absolute;
+  left: 205px;
+  top: -85px;
+  display: inline-block;
+  font-size: 750px;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  font-stretch: ultra-expanded;
+  transform: rotate(360deg);
+  color: rgb(241, 75, 103);
+}
