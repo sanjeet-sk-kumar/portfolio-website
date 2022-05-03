@@ -41,6 +41,8 @@
   //   height: 40px;
   height: 3.2rem;
   width: 3.2rem;
+  animation: rotateIn 1s linear both;
+  animation-delay: 1.4s;
 }
 
 .text-zone p {
@@ -49,6 +51,7 @@
   letter-spacing: 2px;
   font-size: 14px;
   position: relative;
+  animation: fadeIn 1s 1.8s backwards;
 }
 
 .scroll-down {
@@ -157,7 +160,7 @@
     width: 50%;
   }
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1080px) {
   #section-home {
     padding-left: 13rem;
   }
@@ -190,7 +193,8 @@
 
   .text-zone-2 {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #header {
@@ -204,7 +208,7 @@
   }
 
   .fake-big-2 {
-    position: absolute;
+    // position: absolute;
     font-size: 25rem;
     font-weight: 700;
     left: 560px;

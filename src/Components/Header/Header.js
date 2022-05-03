@@ -34,7 +34,10 @@ const Header = () => {
           <audio ref={myAudio} id="my-audio">
             <source src={mp3} type="audio/mpeg" />
           </audio>
-          <FaSoundcloud className={`sound-cloud sound-cloud-${soundTrack}`} />
+          <FaSoundcloud
+            className={`sound-cloud sound-cloud-${soundTrack}`}
+            size={32}
+          />
           <span>Sound</span>
           <div className="on-off">
             {soundTrack === "on" && (

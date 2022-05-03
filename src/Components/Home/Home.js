@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowDown } from "react-icons/fa";
 import Button from "../Common/Button/Button";
+import AnimateLetters from "../AnimateLetters/AnimateLetters";
 import "./Home.scss";
 import MagicWallItem from "../Common/MagicWallItem/MagicWallItem";
 import logoS from "../../assets/images/s.png";
@@ -15,13 +16,55 @@ import pobrane3 from "../../assets/images/pobrane.jpg";
 import themeContent from "../../assets/images/https-club-silversurfers-com-wp-content-themes-club-2B-img-logo-svg.png";
 
 const Home = () => {
+  const [letterClass, setLetterClass] = useState("text-animate");
+  const nameArray = ["a", "n", "j", "e", "e", "t", ","];
+  const roleNameArray = [
+    "F",
+    "r",
+    "o",
+    "n",
+    "t",
+    "e",
+    "n",
+    "d",
+    " ",
+    "D",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+  ];
+  useEffect(() => {
+    setTimeout(() => setLetterClass("text-animate-hover"), 4000);
+  }, []);
   return (
     <>
       <section id="section-home" className="section-home">
         <div className="text-zone">
           <h1>
-            Hi, <br /> I'm <img src={logoS} alt="Sanjeet" />
-            anjeet, <br /> Web Developer
+            <span className={`${letterClass} _11`}>H</span>
+            <span className={`${letterClass} _12`}>i</span>
+            <span className={`${letterClass} _13`}>,</span>
+            <br />
+            <span className={`${letterClass} _14`}>I</span>
+            <span className={`${letterClass} _15`}>'</span>
+            <span className={`${letterClass} _16`}>m</span>{" "}
+            <img src={logoS} alt="Sanjeet" />
+            <AnimateLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={17}
+            />
+            <br />
+            <AnimateLetters
+              letterClass={letterClass}
+              strArray={roleNameArray}
+              idx={24}
+            />
           </h1>
           <p className="gray-text">Front End Developer / Javascript</p>
           <br />
